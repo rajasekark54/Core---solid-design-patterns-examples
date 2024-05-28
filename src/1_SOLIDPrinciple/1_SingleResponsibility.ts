@@ -14,3 +14,20 @@ class OrderService {
 
   sendOrderConfirmation(orderData: any): void {}
 }
+
+/* ----------------- */
+
+// Good design
+class OrderService1 {
+  createOrder(orderData: any): void {}
+}
+
+class DiscountService {
+  calculateDiscount(orderData: any): number {
+    return 10;
+  }
+}
+
+class NotificationService {
+  sendOrderConfirmation(orderData: any): void {}
+}
