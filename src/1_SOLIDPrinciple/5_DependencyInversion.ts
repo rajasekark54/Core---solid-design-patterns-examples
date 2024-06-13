@@ -42,22 +42,26 @@ class Notification {
 /* ----------------- */
 
 // Good Design
+// Abstraction
 interface MessageService {
   sendMessage(message: string): void;
 }
 
+// Low-Level Module (Detail)
 class EmailService1 implements MessageService {
   sendMessage(message: string): void {
     console.log(`Sending email: ${message}`);
   }
 }
 
+// Low-Level Module (Detail)
 class SMSService implements MessageService {
   sendMessage(message: string): void {
     console.log(`Sending SMS: ${message}`);
   }
 }
 
+// High level module
 class Notification1 {
   private messageService: MessageService;
 
