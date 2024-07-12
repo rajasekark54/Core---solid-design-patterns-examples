@@ -1,0 +1,15 @@
+{
+  "name": "core---solid-design-patterns-examples",
+  "version": "1.0.0",
+  "description": "This repository provides comprehensive examples of SOLID principles and design patterns implemented in TypeScript, demonstrating practical applications for building maintainable and scalable software. Each concept is illustrated with real-world scenarios to enhance understanding and retention",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "solid principle",
+    "design pattern"
+  ],
+  "author": "Rajasekar Kannan",
+  "license": "ISC"
+}
